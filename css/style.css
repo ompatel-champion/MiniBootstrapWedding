@@ -155,14 +155,17 @@ hr {
 
 .menu {
   position: fixed;
-  right: 100px;
-  width: 360px;
-  height: 100px;
+  right: -200px;
+  width: 260px;
+  height: 100%;
   top: 0;
   z-index: 10;
-  text-align: right;
+  text-align: left;
 }
-
+.menu.menu-open {
+  right: 0px;
+  background-color: #c80212;
+}
 .menu-wrap {
   position: absolute;
   top: 0;
@@ -193,8 +196,8 @@ hr {
 
 .menu a {
   margin-left: 20px;
-  color: #244ace;
-  display: inline-flex;
+  color: white;
+  display: block;
   font-size: 12px;
   font-weight: 700;
   line-height: 40px;
@@ -203,11 +206,11 @@ hr {
 }
 
 .menu a:hover {
-  color: #c80212;
+  color: #244ace;
 }
 
 .menu a:active {
-  color: #c80212;
+  color: #244ace;
 }
 
 .menu a > i {
@@ -215,8 +218,8 @@ hr {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  width: 32px;
-  font-size: 20px;
+  width: 30px;
+  font-size: 18px;
   line-height: 40px;
   margin: 25px 2px;
 }
@@ -589,6 +592,10 @@ hr {
     width: 500px;
     margin-top: 200px;
   }
+  #contactmodal .modal-dialog {
+    width: 500px;
+    margin-top: 100px;
+  }
 
   #forgot-password .modal-dialog {
     width: 500px;
@@ -638,9 +645,6 @@ em {
 .justify-space-between {
   display: flex;
   justify-content: space-between;
-}
-.menu a.smoothscroll {
-  font-size: 16px;
 }
 .close {
   position: absolute;
