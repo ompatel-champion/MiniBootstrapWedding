@@ -155,17 +155,12 @@ hr {
 
 .menu {
   position: fixed;
-  right: -200px;
-  width: 260px;
-  height: 100%;
+  right: 100px;
+  width: 360px;
+  height: 100px;
   top: 0;
   z-index: 10;
-  text-align: left;
-}
-
-.menu.menu-open {
-  right: 0px;
-  background-color: #c80212;
+  text-align: right;
 }
 
 .menu-wrap {
@@ -198,8 +193,8 @@ hr {
 
 .menu a {
   margin-left: 20px;
-  color: white;
-  display: block;
+  color: #244ace;
+  display: inline-flex;
   font-size: 12px;
   font-weight: 700;
   line-height: 40px;
@@ -208,11 +203,11 @@ hr {
 }
 
 .menu a:hover {
-  color: #244ace;
+  color: #c80212;
 }
 
 .menu a:active {
-  color: #244ace;
+  color: #c80212;
 }
 
 .menu a > i {
@@ -220,8 +215,8 @@ hr {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  width: 25px;
-  font-size: 14px;
+  width: 32px;
+  font-size: 20px;
   line-height: 40px;
   margin: 25px 2px;
 }
@@ -643,4 +638,7 @@ em {
 .justify-space-between {
   display: flex;
   justify-content: space-between;
+}
+.menu a.smoothscroll {
+  font-size: 16px;
 }
