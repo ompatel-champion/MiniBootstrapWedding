@@ -32,7 +32,7 @@
       <h1 class="logo"><a href="index.html#home">Wedding</a></h1>
       <i class="fa fa-times-circle menu-close"></i>
       <a href="#home" class="smoothscroll">Home</a>
-      <a href="#about" class="smoothscroll">About</a>
+      <a href="#" class="smoothscroll" href="#signup" data-toggle="modal" data-target=".about-modal">About</a>
       <a href="#portfolio" class="smoothscroll">Portfolio</a>
       <a href="#" class="smoothscroll" href="#signup" data-toggle="modal" data-target=".contact-modal">Contact</a>
       <a href="#" class="smoothscroll" href="#signup" data-toggle="modal" data-target=".log-sign">Sign UP</a>
@@ -66,28 +66,6 @@
     <!-- /container -->
   </div>
   <!-- /headerwrap -->
-
-  <!-- ========== ABOUT SECTION ========== -->
-  <section id="about" name="about"></section>
-  <div id="f">
-    <div class="container">
-      <div class="row">
-        <h3>ABOUT ME</h3>
-        <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
-
-        <!-- INTRO INFORMATIO-->
-        <div class="col-lg-6 col-lg-offset-3">
-          <p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.</p>
-          <p>My passion is turning good ideas and products into eye-catching sites.</p>
-          <p>Sometimes I blog about design and web trends. Also I share links and my thoughts on <a href="http://twitter.com/templatemag">Twitter</a>. Need a free handsome bootstrap theme? <a href="http://templatemag.com">Done!</a></p>
-          <p>I'm available for freelance jobs. Contact me now.</p>
-          <p><button type="button" class="btn blue-back white-color">I HAVE A FREELANCE JOB</button></p>
-        </div>
-      </div>
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /f -->
 
   <!-- ========== CAROUSEL SECTION ========== -->
   <section id="portfolio" name="portfolio"></section>
@@ -144,6 +122,31 @@
     </div>
   </div>
   <!-- /f -->
+
+  <!-- ========== ABOUT MODAL ========== -->
+  <section id="about" name="about"></section>
+  <div class="modal fade bs-modal-sm about-modal" id="aboutmodal" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="centered">ABOUT ME</h3>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+  
+        <div class="modal-body">
+          <div>
+            <p>A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.</p>
+            <p>My passion is turning good ideas and products into eye-catching sites.</p>
+            <p>Sometimes I blog about design and web trends. Also I share links and my thoughts on <a href="http://twitter.com/templatemag">Twitter</a>. Need a free handsome bootstrap theme? <a href="http://templatemag.com">Done!</a></p>
+            <p>I'm available for freelance jobs. Contact me now.</p>
+            <p><button type="button" class="btn blue-back white-color centered">I HAVE A FREELANCE JOB</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ========== CONTACT MODAL ========== -->
   <div class="modal fade bs-modal-sm contact-modal" id="contactmodal" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
